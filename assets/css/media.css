@@ -1,0 +1,8 @@
+ 
+@media (max-width: 990px) {
+   
+    .quitar-margin{
+        /* background-color: red !important; */
+        margin-left: 0 !important;
+    }
+  }
