@@ -13,6 +13,10 @@ import { Button } from "primereact/button";
 import { Tag } from 'primereact/tag';
 // libreari primeraReact img 
 import { Image } from 'primereact/image';
+// efecto maquina escribir
+import Typewriter from 'typewriter-effect';
+// importo componente para la nieve
+import { Nieve } from "../componentts-web/Nieve";
         
  export const Index = ()=> {
     
@@ -92,13 +96,21 @@ const moreEventTemplate = () => {console.log("hola");}
         <link rel="stylesheet" href="../assets/css/web/bootstrap.css" />
         <link rel="stylesheet" href="../assets/css/web/styles.css" />
     </head>
-   
+    {/* cargo el componente de nieve */}
+    <Nieve></Nieve>
     {/* <!-- ======= Header ======= --> */}
     <header id="header" className="fixed-top d-flex align-items-center header-scrolled header-transparent">
       <div className="container d-flex align-items-center justify-content-between">
 
-        <div className="logo">         
-          <h1><a href="/"><span>Intimo </span></a></h1>
+        <div className="logo">       
+          <Typewriter
+              options={{
+              strings: ['<h1><a href="/"><span>Intimo Sex Shop</span></a></h1>'],
+              autoStart: true,
+              loop: true,
+             
+            }} 
+          />
         </div>
 
         <nav id="navbar" className="navbar">
@@ -142,22 +154,33 @@ const moreEventTemplate = () => {console.log("hola");}
       <div className="row justify-content-between">
         <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
           <div data-aos="zoom-out" className='neon'>
-            <h1>Bienvenido a nuestra <span>Sex Shop</span></h1>
+            <h1 className='neonTittle'>Bienvenido a nuestra <span>Sex Shop</span></h1>
             <h2>Tenemos gran variedadiu de productos y de muy buena calidad</h2>
-            <div className="text-center text-lg-start">
-              <a href="#about" className="btn-get-started scrollto"> A poco precio, miralos!</a>
+            <div className="text-center text-lg-start">               
+            <div  data-aos="zoom-in-up" > 
+            {/* <img  src="../img/web/remove.png" className="img-fluid animated" alt=""/>    */}
+              <a className='buttonModify '>
+                 
+                  <li>
+                    A poco precio, mirealos !!
+                    <span></span><span></span><span></span><span></span>
+                  </li>              
+                
+              </a>
+            </div>
             </div>
           </div>
         </div>
         <div className=" col-lg-4 order-1 order-lg-2 hero-img aos-init aos-animate" data-aos="zoom-out" data-aos-delay="300">
-          <img src="../img/web/hero-img.png" className="img-fluid animated" alt=""/>          
+          {/* <img src="../img/web/hero-img.png" className="img-fluid animated" alt=""/>           */}
+          <img  src="../img/web/remove.png" className="img-fluid animated" alt=""/>       
         </div>
    
       </div>
     </div>
     
     <Wave 
-      fill= ' white'    
+      fill= 'white'    
       paused={false}
       style={{ display: 'flex' , position: 'absolute',bottom:0,opacity: .9 }}
       options={{

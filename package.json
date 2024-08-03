@@ -21,6 +21,7 @@
     "react-multi-select-component": "^4.3.4",
     "react-router-dom": "^6.15.0",
     "react-wavify": "^1.9.0",
+    "typewriter-effect": "^2.21.0",
     "universal-cookie": "^6.1.1"
   },
   "devDependencies": {

@@ -18,3 +18,5 @@ si esta agostado
  // disabled={product.estado === "agotado"}# INTIMO
 # Proyect-intimo
 # Proyect-intimo
+
+se le dd
