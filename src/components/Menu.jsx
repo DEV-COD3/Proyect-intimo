@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 import {HiMiniHome,
         HiMiniRectangleStack,
         HiMiniUserGroup,
-        HiWrenchScrewdriver,
         HiMiniTruck,
         HiPencilSquare } from "react-icons/hi2";
 
@@ -62,15 +61,7 @@ export const Menu = () => {
             </div>             
             <span className="nav-link-text ms-1">Mas vendidos</span>
           </NavLink>
-        </li>          
-        <li className="nav-item">
-          <NavLink className=" nav-link text-white" to="/ ">   
-            <div className="fon-20 text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <HiWrenchScrewdriver/>   
-            </div>             
-            <span className="nav-link-text ms-1">Mi inventario</span>
-          </NavLink>
-        </li>          
+        </li>        
       </ul>
     
     </div>

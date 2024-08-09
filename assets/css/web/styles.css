@@ -136,7 +136,7 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: black !important;
+  background: rgb(56, 54, 54) !important;
   height: 60px;
 }
 
@@ -420,7 +420,8 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  background: url("/img/web/foundWallpaper.jpg");  
+  /* background: url("/img/web/foundWallpaper.jpg");   */
+  background: url("/img/web/foundWeb.jpg");  
   position: relative;
   padding: 120px 0 0 0;
   height: 100vh;
@@ -435,7 +436,7 @@ h6 {
   top: 0;
   left: 0;
   right: 0;
-  animation-name: anim;
+  /* animation-name: anim; */
   animation-duration: 5s;
   animation-iteration-count: infinite;
   transition: all;

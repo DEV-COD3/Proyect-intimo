@@ -109,7 +109,7 @@ app.post('/insertProduct', (req, res) => {
             req.body.status,
             req.body.star,
       ]
-     console.log(values);
+//      console.log(values);
       con.query('INSERT INTO productos (nombre,descripcion,routeImg,precio,categoria_id,estado,estrellas) VALUES(?)',[values], (err,result)=> {
             if (err) {
                res.send('No se insertaron los productos');

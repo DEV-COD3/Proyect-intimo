@@ -101,84 +101,60 @@ const moreEventTemplate = () => {console.log("hola");}
     {/* <!-- ======= Header ======= --> */}
     <header id="header" className="fixed-top d-flex align-items-center header-scrolled header-transparent">
       <div className="container d-flex align-items-center justify-content-between">
-
+        {/* efecto escritura solo libreria */}
         <div className="logo">       
           <Typewriter
               options={{
               strings: ['<h1><a href="/"><span>Intimo Sex Shop</span></a></h1>'],
               autoStart: true,
               loop: true,
-             
             }} 
           />
         </div>
-
         <nav id="navbar" className="navbar">
           <ul>
             <li><a className="nav-link scrollto active" href="#hero">Home</a></li>
-            <li><a className="nav-link scrollto" href="#about">About</a></li>
+            <li><a className="nav-link scrollto" href="#Quienes-somos">Quienes somos</a></li>
             <li><a className="nav-link scrollto" href="#gallery">Trajes</a></li>
             <li><a className="nav-link scrollto" href="#team">Mas Vendidos </a></li>
             <li><a className="nav-link scrollto" href="#descuentosDay">Descuentos</a></li>
             <li><a className="nav-link scrollto" href="#contact">Contactanos</a></li>
             <li><a className="nav-link scrollto" href="/login">Admin</a></li>
-            {/* <li className="dropdown"><a href="#"><span>Drop Down</span> <i className="bi bi-chevron-down"></i></a>
-              <ul>
-                <li><a href="#">Drop Down 1</a></li>
-                <li className="dropdown"><a href="#"><span>Deep Drop Down</span> <i className="bi bi-chevron-right"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Drop Down 1</a></li>
-                    <li><a href="#">Deep Drop Down 2</a></li>
-                    <li><a href="#">Deep Drop Down 3</a></li>
-                    <li><a href="#">Deep Drop Down 4</a></li>
-                    <li><a href="#">Deep Drop Down 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Drop Down 2</a></li>
-                <li><a href="#">Drop Down 3</a></li>
-                <li><a href="#">Drop Down 4</a></li>
-              </ul>
-            </li> */}
-           
           </ul>
           <i className="bi bi-list mobile-nav-toggle"></i>
         </nav>
         {/* <!-- .navbar --> */}
-
       </div>
     </header>
    {/* <!-- End Header --> */}
-    <section id="hero">
-      
+  {/* welcome - img - button de inicio */}
+    <section id="hero">      
     <div className="container">
       <div className="row justify-content-between">
         <div className="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
           <div data-aos="zoom-out" className='neon'>
             <h1 className='neonTittle'>Bienvenido a nuestra <span>Sex Shop</span></h1>
-            <h2>Tenemos gran variedadiu de productos y de muy buena calidad</h2>
+            <h2>Tenemos gran variedad de productos y de muy buena calidad</h2>
             <div className="text-center text-lg-start">               
             <div  data-aos="zoom-in-up" > 
             {/* <img  src="../img/web/remove.png" className="img-fluid animated" alt=""/>    */}
-              <a className='buttonModify '>
-                 
+              <a className='buttonModify '>                 
                   <li>
                     A poco precio, mirealos !!
                     <span></span><span></span><span></span><span></span>
-                  </li>              
-                
+                  </li>             
               </a>
             </div>
             </div>
           </div>
         </div>
-        <div className=" col-lg-4 order-1 order-lg-2 hero-img aos-init aos-animate" data-aos="zoom-out" data-aos-delay="300">
-          {/* <img src="../img/web/hero-img.png" className="img-fluid animated" alt=""/>           */}
+        <div className=" col-lg-5 order-1 order-lg-2 hero-img aos-init aos-animate" data-aos="zoom-out" data-aos-delay="300">
+          {/* <img src="../img/web/hero-img.png" className="img-fluid animated" alt=""/> */}
           <img  src="../img/web/remove.png" className="img-fluid animated" alt=""/>       
-        </div>
-   
+        </div>   
       </div>
     </div>
-    
+    {/* efecto ola */}
     <Wave 
       fill= 'white'    
       paused={false}
@@ -191,21 +167,22 @@ const moreEventTemplate = () => {console.log("hola");}
        }}
       />
     </section> 
-   
+   {/* end welcome - img - button de inicio */}
+  {/* cuerpo de la web */}
     <main id="main">
 
-    {/* <!-- ======= About Section ======= --> */}
-    <section id="about" className="about">
+    {/* <!-- ======= quienes somos Section ======= --> */}
+    <section id="Quienes-somos" className="about" style={{background: '#ede8e8'}}>
       <div className="container-fluid">
-
         <div className="row">
-          <div className="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch" data-aos="fade-right">
-            <a href="https://www.youtube.com/watch?v=StpBR2W8G5A" className="glightbox play-btn mb-4"></a>
+          <div className="col-xl-7 col-lg-6 col-sm-6 video-box d-flex justify-content-center align-items-stretch" data-aos="fade-right">
+           
+            <img style={{objectFit: 'contain'}} src="../img/web/3.jpg" className="img-fluid animated" alt=""/>
           </div>
 
-          <div className="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
-            <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.</p>
+          <div className="col-xl-5 col-lg-6 col-sm-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
+            <h3>Quienes somos ?</h3>
+            <p>Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.</p>
 
             <div className="icon-box" data-aos="zoom-in" data-aos-delay="100">
               <div className="icon"><i className="bx bx-fingerprint"></i></div>
